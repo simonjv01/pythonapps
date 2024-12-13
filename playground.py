@@ -72,7 +72,13 @@
 # device_id_list = ["us2c0R5", "2R78TBR", "bt3MIEz"]
 
 # print(username_list + device_id_list)
-waiting_list = ["Mr. Brown", "Mr. White", "Mr. Green", "Ms. Black", "Ms. White"]
-for index, name in enumerate(waiting_list):
-    row = f"{index + 1}. {name}"
-    print(row)
+# waiting_list = ["Mr. Brown", "Mr. White", "Mr. Green", "Ms. Black", "Ms. White"]
+# for index, name in enumerate(waiting_list):
+#     row = f"{index + 1}. {name}"
+#     print(row)
+    
+user_entries = ['10', '19.2', '20', '3.2']
+print(user_entries)
+user_numbers = [float(number) for number in user_entries]
+
+print(user_numbers)
