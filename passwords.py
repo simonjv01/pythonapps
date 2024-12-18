@@ -23,8 +23,8 @@ for i in password:
 
 result.append(uppercase)
 
-
-print(all(result))
+if all(result) == True:
+    print("Password is valid")
 
 
 
