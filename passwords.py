@@ -15,6 +15,16 @@ for i in password:
 
 result.append(digit)
 
-print(result)
+uppercase = False
+
+for i in password:
+    if i.isupper():
+        uppercase = True
+
+result.append(uppercase)
+
+
+print(all(result))
+
 
 
