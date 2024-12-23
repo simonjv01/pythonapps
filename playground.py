@@ -82,3 +82,5 @@ print(user_entries)
 user_numbers = [float(number) for number in user_entries]
 
 print(user_numbers)
+
+print(max(user_numbers))
