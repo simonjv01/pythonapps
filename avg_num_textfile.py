@@ -1,4 +1,4 @@
-def calculate_average(filename):
+def calculate_average(filename_local):
     numbers = []
     try:
         with open(filename, 'r') as file:
