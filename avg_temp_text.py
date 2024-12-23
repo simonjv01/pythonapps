@@ -3,7 +3,9 @@ def get_avgerage():
         data = file.readlines()
     values = data[1:]
     values = [float(value) for value in values]
-    return values
+
+    average_local = sum(values) / len(values)
+    return average_local
 
 average = get_avgerage()
 print(average)
