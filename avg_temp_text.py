@@ -5,7 +5,8 @@ def get_avgerage():
     values = [float(value) for value in values]
 
     average_local = sum(values) / len(values)
-    return average_local
+    avg_temp = round(average_local, 2)
+    return avg_temp
 
 average = get_avgerage()
 print(average)
