@@ -77,10 +77,25 @@
 #     row = f"{index + 1}. {name}"
 #     print(row)
     
-user_entries = ['10', '19.2', '20', '3.2']
-print(user_entries)
-user_numbers = [float(number) for number in user_entries]
+# user_entries = ['10', '19.2', '20', '3.2']
+# print(user_entries)
+# user_numbers = [float(number) for number in user_entries]
 
-print(user_numbers)
+# print(user_numbers)
 
-print(max(user_numbers))
+# print(max(user_numbers))
+
+def all_equal(lst):
+  return len(set(lst)) == 1
+
+all_equal([1, 2, 3, 4, 5, 6]) # False
+print("1st all equal: ", all_equal([1, 2, 3, 4, 5, 6]))
+ # True
+print("2nd all equal: ", all_equal([1, 1, 1, 1]))
+
+
+new_set = (2, 2, 2, 2)
+print(new_set)
+print(type(new_set))
+print(len(set(new_set)))
+print(set(new_set))
