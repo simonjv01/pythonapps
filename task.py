@@ -16,8 +16,16 @@
 #     if color > 50:
 #         print(color)
 
-filenames = ["report.txt", "records.txt", "data.txt", "file.txt"]
-for filename in filenames:
-    if filename.endswith(".txt"):
-        name = filename[:-4]
-        print(name.capitalize())
+# filenames = ["report.txt", "records.txt", "data.txt", "file.txt"]
+# for filename in filenames:
+#     if filename.endswith(".txt"):
+#         name = filename[:-4]
+#         print(name.capitalize())
+
+def format_filename():
+    filename = "report.txt"
+    new_filename = filename[0:6]
+    name = new_filename.capitalize()
+    return name
+    
+print(format_filename())
