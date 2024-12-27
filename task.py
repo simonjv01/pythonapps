@@ -22,10 +22,28 @@
 #         name = filename[:-4]
 #         print(name.capitalize())
 
-def format_filename():
-    filename = "report.txt"
-    new_filename = filename[0:6]
-    name = new_filename.capitalize()
-    return name
+# def format_filename():
+#     filename = "report.txt"
+#     new_filename = filename[0:6]
+#     name = new_filename.capitalize()
+#     return name
     
-print(format_filename())
+# print(format_filename())
+
+def get_maximum():
+    """
+    Returns the maximum temperature in Celsius from a predefined list.
+
+    :return: Maximum temperature in Celsius
+    :rtype: float
+    """
+    celsius = [14, 15.1, 12.3]
+    maximum = max(celsius)
+    return maximum
+
+
+celsius = get_maximum()
+
+fahrenheit = celsius * 1.8 + 32
+
+print(fahrenheit)
