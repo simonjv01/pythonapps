@@ -81,7 +81,7 @@ user_entries = ['10', '19.2', '20', '3.2']
 print(user_entries)
 user_numbers = [float(number) for number in user_entries]
 
-# print(user_numbers)
+print(user_numbers)
 
 # print(max(user_numbers))
 
