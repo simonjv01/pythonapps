@@ -85,17 +85,46 @@
 
 # print(max(user_numbers))
 
-def all_equal(lst):
-  return len(set(lst)) == 1
+# def all_equal(lst):
+#   return len(set(lst)) == 1
 
-all_equal([1, 2, 3, 4, 5, 6]) # False
-print("1st all equal: ", all_equal([1, 2, 3, 4, 5, 6]))
- # True
-print("2nd all equal: ", all_equal([1, 1, 1, 1]))
+# all_equal([1, 2, 3, 4, 5, 6]) # False
+# print("1st all equal: ", all_equal([1, 2, 3, 4, 5, 6]))
+#  # True
+# print("2nd all equal: ", all_equal([1, 1, 1, 1]))
 
 
-new_set = (2, 2, 2, 2)
-print(new_set)
-print(type(new_set))
-print(len(set(new_set)))
-print(set(new_set))
+# new_set = (2, 2, 2, 2)
+# print(new_set)
+# print(type(new_set))
+# print(len(set(new_set)))
+# print(set(new_set))
+
+def max_by(lst, fn):
+  return max(map(fn, lst))
+  """
+  Returns the maximum value in a list based on a provided function.
+
+  Parameters:
+  lst (list): The list of elements to evaluate.
+  fn (function): A function that takes an element from the list and returns a value to compare.
+
+  Returns:
+  The maximum value obtained by applying the function to the elements of the list.
+  """
+  # return max(map(fn, lst))
+
+print(max_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n'])) # 8)
+
+def max_element_index(arr):
+  return arr.index(max(arr))
+
+print(max_element_index([5, 8, 9, 7, 10, 3, 0])) # 4
+
+# print("Hello World")
+
+# list1 = [5, 8, 9, 7, 10, 3, 0]
+
+# max_value = max(list1)
+
+# print(max_value)
