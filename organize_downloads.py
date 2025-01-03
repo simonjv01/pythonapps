@@ -84,4 +84,4 @@ def organize_folder(folder):
                         print(f"Moved {entry.name} to {folder_name}")
 
 
-organize_folder("/Users/simonvargas/Downloads")
+organize_folder("C:\\Users\\sjvar\\Downloads")
