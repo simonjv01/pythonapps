@@ -50,13 +50,28 @@
 
 feet_inches = input("Enter your height in feet and inches: ")
 
-def convert(feet_inches):
+def convert_feet_to_inches(feet_inches):
     feet, inches = feet_inches.split(" ")
+    print(feet, inches)
     feet = int(feet)
     inches = int(inches)
     total_inches = (feet * 12) + inches
     return total_inches
 
-height= convert(feet_inches)
+def convert_feet_to_meters(feet_inches_in_meters):
+    # parts = feet_inches_in_meters.split(" ")
+    # print(parts)
+    feet, inches = feet_inches_in_meters.split(" ")
+    feet = float(feet[0])
+    inches = float(inches[0:2])
+    print(feet, inches)
+    meters = (feet * 0.3048) + (inches * 0.0254)
+    return meters
+
+height= convert_feet_to_inches(feet_inches)
+
+# height in meters
+height_in_meters = convert_feet_to_meters(feet_inches)
+print(f"Your height in meters is {height_in_meters}")
 
 print(f"Your height in inches is {height}")
