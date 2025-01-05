@@ -30,20 +30,33 @@
     
 # print(format_filename())
 
-def get_maximum():
-    """
-    Returns the maximum temperature in Celsius from a predefined list.
+# def get_maximum():
+#     """
+#     Returns the maximum temperature in Celsius from a predefined list.
 
-    :return: Maximum temperature in Celsius
-    :rtype: float
-    """
-    celsius = [14, 15.1, 12.3]
-    maximum = max(celsius)
-    return maximum
+#     :return: Maximum temperature in Celsius
+#     :rtype: float
+#     """
+#     celsius = [14, 15.1, 12.3]
+#     maximum = max(celsius)
+#     return maximum
 
 
-celsius = get_maximum()
+# celsius = get_maximum()
 
-fahrenheit = celsius * 1.8 + 32
+# fahrenheit = celsius * 1.8 + 32
 
-print(fahrenheit)
+# print(fahrenheit)
+
+feet_inches = input("Enter your height in feet and inches: ")
+
+def convert(feet_inches):
+    feet, inches = feet_inches.split(" ")
+    feet = int(feet)
+    inches = int(inches)
+    total_inches = (feet * 12) + inches
+    return total_inches
+
+height= convert(feet_inches)
+
+print(f"Your height in inches is {height}")
