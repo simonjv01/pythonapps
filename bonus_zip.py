@@ -1,4 +1,4 @@
-contents = ["all carrots are to be sliced", "all onions are to be diced", "all potatoes are to be mashed"]
+contents = ["this is pretty cool", "python is interesting", "pandas is fun"]
 
 filenames = ["RawData.txt", "Reports.txt", "Presentation.txt"]
 
