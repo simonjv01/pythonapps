@@ -1,4 +1,4 @@
-greetings = ['hello', 'hi', 'hey', 'hola', 'hi', 'hello', 'hi']
+greetings = ['hello', 'hi', 'hey', 'greetings', 'hi', 'hello', 'hi']
 newGreetings = []
 newGreetings2 = [word for word in greetings if word == 'hi']
 
