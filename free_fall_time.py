@@ -4,4 +4,4 @@ def calculate_time(h, g=9.80665):
     
   
 time = calculate_time(100)
-print(time)
+print(time * 100)
